@@ -1,7 +1,7 @@
 {
     "theme_color": "#3594f6",
-    "background_color": "#ffffff",
-    "display": "standalone",
+    "background_color": "#1d66b1",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "/",
     "name": "KTBBD APP",
