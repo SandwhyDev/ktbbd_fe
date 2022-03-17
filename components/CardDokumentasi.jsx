@@ -18,7 +18,7 @@ const CardDokumentasi = () => {
         />
         <div className="w-full h-24 px-4 py-3 flex flex-col justify-end absolute bottom-0 bg-gradient-to-b from-transparent to-black/80 ">
           <h1 className="font-bold text-white text-xl">Acara</h1>
-          <p className="font-bold text-white text-xs">
+          <p className="font-bold text-white/70 text-xs">
             17 agustus 2022 - 20 agustus 2022
           </p>
         </div>
