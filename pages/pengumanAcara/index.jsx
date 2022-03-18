@@ -3,6 +3,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import Link from "next/link";
 import CardAcara from "../../components/CardAcara";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
         <CardAcara />
         <CardAcara />
       </div>
+      <Footer />
     </div>
   );
 };

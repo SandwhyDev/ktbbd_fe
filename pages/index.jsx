@@ -28,13 +28,13 @@ export default function Home() {
         </p>
         <div className="w-full flex  gap-2">
           <button
-            className="w-full p-4 bg-blue-400 rounded-md"
+            className="w-full p-3 bg-blue-400 rounded-md"
             onClick={handleLogin}
           >
             Login
           </button>
           <button
-            className="w-full p-4 bg-white rounded-md border-2 border-blue-300"
+            className="w-full p-3 bg-white rounded-md border-2 border-blue-300"
             onClick={handleDaftar}
           >
             <h1 className=" text-blue-500">Daftar</h1>

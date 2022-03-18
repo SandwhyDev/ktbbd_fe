@@ -8,13 +8,11 @@ const SwiperBanners = () => {
   return (
     <div className="w-full h-44 bg-red-500 ">
       <Swiper
-        slidesPerView={1}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         autoplay={{ delay: 2500 }}
         className="w-full h-44"
         loop={true}
         pagination={{ clickable: true }}
-        navigation={true}
       >
         <SwiperSlide>
           <img

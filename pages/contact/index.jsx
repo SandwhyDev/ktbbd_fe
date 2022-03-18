@@ -2,13 +2,13 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
-const profile = () => {
+const index = () => {
   return (
     <div className="w-screen h-screen flex flex-col gap-2">
-      <Navbar title="Profile" />
+      <Navbar title="Contact Us" />
       <Footer />
     </div>
   );
 };
 
-export default profile;
+export default index;

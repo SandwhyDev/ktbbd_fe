@@ -3,8 +3,14 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdLockOutline } from "react-icons/md";
 import { FiUser } from "react-icons/fi";
+import { useRouter } from "next/router";
 
 const index = () => {
+  const navigate = useRouter();
+
+  const handleSubmit = () => {
+    navigate.push("/home");
+  };
   return (
     <div className="w-screen h-screen p-4 flex flex-col gap-4  items-center">
       <h1 className="text-2xl">Daftar Warga BBD</h1>
@@ -118,8 +124,10 @@ const index = () => {
           </div>
         </div>
       </form>
-
-      <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3">
+      <button
+        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
+        onClick={handleSubmit}
+      >
         Daftar
       </button>
     </div>
