@@ -1,6 +1,6 @@
 import React from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
@@ -9,9 +9,9 @@ const CardAnggota = () => {
   return (
     <div className="w-full h-full ">
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
         autoplay={{ delay: 3000 }}
-        className=" w-full h-[500px]  "
+        className=" w-full h-[500px]"
         loop={true}
         pagination={{ clickable: true }}
       >
