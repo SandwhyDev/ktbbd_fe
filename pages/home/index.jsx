@@ -8,7 +8,6 @@ import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
 const index = ({ data_acara }) => {
-  console.log(data_acara);
   return (
     <div className="w-screen min-h-screen  flex flex-col items-center">
       <div className="w-full p-4 bg-white flex items-center justify-between">

@@ -33,7 +33,7 @@ const profile = () => {
       </div>
       {logout && (
         <div className=" w-full h-full bg-black/70 fixed top-0 flex flex-col items-center justify-center z-30 p-4 ">
-          <div className="modalLogout w-full h-52 bg-white rounded-lg flex flex-col items-center justify-between p-4">
+          <div className="modalLogout w-full h-64 bg-white rounded-lg flex flex-col items-center justify-between p-4">
             <div></div>
             <h1 className="text-xl text-red-500 ">Yakin ingin Logout ?</h1>
             <div className="w-full h-12 flex gap-2 ">
