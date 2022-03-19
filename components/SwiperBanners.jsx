@@ -16,25 +16,22 @@ const SwiperBanners = () => {
       >
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/1001990/pexels-photo-1001990.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
-            srcset=""
             className="w-full h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
-            srcset=""
             className="w-full h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
-            srcset=""
             className="w-full h-full object-cover"
           />
         </SwiperSlide>

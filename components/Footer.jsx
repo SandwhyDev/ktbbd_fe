@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="footer w-full h-12 px-4 fixed bottom-0 bg-white flex gap-4 items-center justify-between">
+    <div className=" w-full h-12 px-4 fixed bottom-0 bg-white flex gap-4 items-center justify-between mt-16 border-t-[.5px] border-blue-300">
       <Link href={"/home"}>
         <span className="text-2xl text-blue-300">
           <AiOutlineHome />
@@ -21,7 +21,7 @@ const Footer = () => {
       </Link>
 
       <Link href={"/about"}>
-        <div className="w-12 h-12 bg-blue-300 -mt-12 flex"></div>
+        <div className="rotateIn w-12 h-12 bg-blue-300 -mt-12 flex"></div>
       </Link>
 
       <Link href={"/contact"}>

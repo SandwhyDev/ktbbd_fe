@@ -7,16 +7,21 @@ import Footer from "../../components/Footer";
 
 const index = () => {
   return (
-    <div className="w-screen h-screen flex flex-col gap-2">
+    <div className="w-screen min-h-screen flex flex-col gap-2">
       <Navbar title="Pengumuman Acara" />
 
-      <div className="flex flex-col gap-2 w-full p-4">
+      <div className="flex flex-col gap-2 w-full p-4 ">
+        <CardAcara />
+        <CardAcara />
+        <CardAcara />
         <CardAcara />
         <CardAcara />
         <CardAcara />
         <CardAcara />
       </div>
-      <Footer />
+      <div className="w-full mt-8">
+        <Footer />
+      </div>
     </div>
   );
 };

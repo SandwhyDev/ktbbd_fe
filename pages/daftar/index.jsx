@@ -4,17 +4,56 @@ import { BsWhatsapp } from "react-icons/bs";
 import { MdLockOutline } from "react-icons/md";
 import { FiUser } from "react-icons/fi";
 import { useRouter } from "next/router";
+import ax from "../../libs/ax";
+import { Modal } from "antd";
 
 const index = () => {
   const navigate = useRouter();
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { nama, password, nomor_hp, blok, no, rw } = e.target;
+
+    console.log({
+      nama: nama.value,
+      password: password.value,
+      nomor_hp: nomor_hp.value,
+      blok: blok.value,
+      no: no.value,
+      rw: rw.value,
+    });
+
+    ax.post("/user_create", {
+      nama: nama.value,
+      password: password.value,
+      nomor_hp: parseInt(nomor_hp.value),
+      blok: blok.value,
+      no: parseInt(no.value),
+      rw: parseInt(rw.value),
+    })
+      .then((response) => {
+        if (response.status == 201) {
+          sessionStorage.setItem("_token", response.data.token);
+          Modal.success({
+            title: "Daftar Berhasil",
+          });
+          navigate.push("/home");
+        }
+      })
+      .catch((err) => {
+        Modal.error({
+          title: err.response.data.msg,
+        });
+      });
+  };
+
+  const handleNext = () => {
     navigate.push("/home");
   };
   return (
     <div className="w-screen h-screen p-4 flex flex-col gap-4  items-center">
       <h1 className="text-2xl">Daftar Warga BBD</h1>
-      <form className="w-full flex flex-col gap-4 ">
+      <form className="w-full flex flex-col gap-4 " onSubmit={handleSubmit}>
         <div className="form_group flex flex-col gap-2">
           <label htmlFor="nama" className="text-lg font-light uppercase">
             Nama lengkap
@@ -64,7 +103,7 @@ const index = () => {
               name="nomor_hp"
               id="nomor_hp"
               placeholder="0812347563"
-              className="w-full  outline-none  "
+              className="w-full  outline-none  bg-transparent  "
             />
           </div>
         </div>
@@ -98,13 +137,13 @@ const index = () => {
 
         <div className="w-full flex gap-2">
           <div className="form_group  flex flex-col gap-2">
-            <label htmlFor="blok" className="text-lg font-light">
+            <label htmlFor="rt" className="text-lg font-light">
               RT
             </label>
             <input
               type="number"
-              name="blok"
-              id="blok"
+              name="rt"
+              id="rt"
               value="02"
               disabled
               className="w-full p-3 border-[.5px] rounded-lg border-gray-500 outline-none uppercase "
@@ -123,13 +162,10 @@ const index = () => {
             />
           </div>
         </div>
+        <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3">
+          Daftar
+        </button>
       </form>
-      <button
-        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
-        onClick={handleSubmit}
-      >
-        Daftar
-      </button>
     </div>
   );
 };

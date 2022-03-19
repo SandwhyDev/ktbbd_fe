@@ -23,6 +23,7 @@ const index = () => {
     })
       .then((response) => {
         if (response.status == 200) {
+          sessionStorage.setItem("_token", response.data.token);
           Modal.success({
             title: "login berhasil",
           });
@@ -34,6 +35,10 @@ const index = () => {
           title: err.response.data.msg,
         });
       });
+  };
+
+  const handleNext = () => {
+    navigate.push("/home");
   };
 
   return (
@@ -75,10 +80,13 @@ const index = () => {
             />
           </div>
         </div>
-        <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3">
-          Login
-        </button>
       </form>
+      <button
+        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
+        onClick={handleNext}
+      >
+        Login
+      </button>
     </div>
   );
 };
