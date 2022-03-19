@@ -40,7 +40,7 @@ const CardAnggota = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <Anggota position="Developer App" name="Sandy" />
+          <Anggota position="Developer Website" name="Sandy" />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-
+import { useRouter } from "next/router";
 const profile = () => {
+  const navigate = useRouter();
+
   const [logout, setLogout] = useState(false);
   const modalHandleLogout = () => {
     setLogout(!logout);
+  };
+
+  const handleProfile = () => {
+    navigate.push("/editProfile");
   };
   return (
     <div className="w-screen h-screen flex flex-col gap-2">
       <Navbar title="Profile" />
       <div className="w-full h-full flex flex-col gap-4 p-4">
-        <button className="w-full h-12 border-[.5px] border-gray-500 rounded-full">
+        <button
+          className="w-full h-12 border-[.5px] border-gray-500 rounded-full font-light"
+          onClick={handleProfile}
+        >
           Edit Profile
         </button>
 
