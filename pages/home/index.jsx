@@ -7,7 +7,7 @@ import CardAcara from "../../components/CardAcara";
 import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
-const index = ({ data_acara }) => {
+const index = ({ data_acara, data_dokumentasi }) => {
   return (
     <div className="w-screen min-h-screen  flex flex-col items-center">
       <div className="w-full p-4 bg-white flex items-center justify-between">
@@ -29,16 +29,16 @@ const index = ({ data_acara }) => {
         </div>
         <div className="w-full flex flex-col gap-2">
           <CardAcara
-            key={data_acara[0].id}
-            nama_acara={data_acara[0].nama_acara}
-            jadwal={data_acara[0].jadwal.split("T")[0]}
-            banner={data_acara[0].banner.location}
+            key={data_acara[0]?.id}
+            nama_acara={data_acara[0]?.nama_acara}
+            jadwal={data_acara[0]?.jadwal.split("T")[0]}
+            banner={data_acara[0]?.banner.location}
           />
           <CardAcara
-            key={data_acara[1].id}
-            nama_acara={data_acara[1].nama_acara}
-            jadwal={data_acara[1].jadwal.split("T")[0]}
-            banner={data_acara[1].banner.location}
+            key={data_acara[1]?.id}
+            nama_acara={data_acara[1]?.nama_acara}
+            jadwal={data_acara[1]?.jadwal.split("T")[0]}
+            banner={data_acara[1]?.banner.location}
           />
         </div>
       </div>
@@ -53,8 +53,18 @@ const index = ({ data_acara }) => {
           </span>
         </div>
         <div className="w-full flex flex-col gap-2">
-          <CardDokumentasi />
-          <CardDokumentasi />
+          <CardDokumentasi
+            title={data_dokumentasi[0]?.nama_acara}
+            tanggal={data_dokumentasi[0]?.tanggal_acara}
+            img1={data_dokumentasi[0]?.photo[3].location}
+            img2={data_dokumentasi[0]?.photo[7].location}
+          />
+          <CardDokumentasi
+            title={data_dokumentasi[1]?.nama_acara}
+            tanggal={data_dokumentasi[1]?.tanggal_acara}
+            img1={data_dokumentasi[1]?.photo[5].location}
+            img2={data_dokumentasi[1]?.photo[2].location}
+          />
         </div>
       </div>
       <div className="w-full mt-14">
@@ -66,10 +76,12 @@ const index = ({ data_acara }) => {
 
 export async function getServerSideProps() {
   const acara = await ax.get("/acara_read");
+  const dokumentasi = await ax.get("/dokumentasi_read");
 
   return {
     props: {
       data_acara: acara.data.query,
+      data_dokumentasi: dokumentasi.data.query,
     },
   };
 }
