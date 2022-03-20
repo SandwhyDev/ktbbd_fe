@@ -8,6 +8,7 @@ import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
 const index = ({ data_acara, data_dokumentasi }) => {
+  console.log(data_acara[0].hari_tanggal.split(",")[0]);
   return (
     <div className="w-screen min-h-screen  flex flex-col items-center">
       <div className="w-full p-4 bg-white flex items-center justify-between">
@@ -31,13 +32,15 @@ const index = ({ data_acara, data_dokumentasi }) => {
           <CardAcara
             key={data_acara[0]?.id}
             nama_acara={data_acara[0]?.nama_acara}
-            jadwal={data_acara[0]?.jadwal.split("T")[0]}
+            hari={data_acara[0]?.hari_tanggal}
+            jadwal={data_acara[0]?.jam}
             banner={data_acara[0]?.banner.location}
           />
           <CardAcara
             key={data_acara[1]?.id}
             nama_acara={data_acara[1]?.nama_acara}
-            jadwal={data_acara[1]?.jadwal.split("T")[0]}
+            hari={data_acara[1]?.hari_tanggal}
+            jadwal={data_acara[1]?.jam}
             banner={data_acara[1]?.banner.location}
           />
         </div>

@@ -17,7 +17,8 @@ const index = ({ data_acara }) => {
             <CardAcara
               key={e.id}
               nama_acara={e.nama_acara}
-              jadwal={e.jadwal.split("T")[0]}
+              hari={e.hari_tanggal}
+              jadwal={e.jam}
               banner={e.banner.location}
             />
           );
