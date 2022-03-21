@@ -9,7 +9,7 @@ import Link from "next/link";
 import ax from "../../libs/ax";
 const index = ({ data_acara, data_dokumentasi }) => {
   return (
-    <div className="w-screen min-h-screen  flex flex-col items-center">
+    <div className="  w-screen min-h-screen  flex flex-col items-center">
       <div className="w-full p-4 bg-white flex items-center justify-between">
         <h1 className="text-lg font-bold">Halo, Users</h1>
         <div className="w-10 h-10 bg-blue-300"></div>

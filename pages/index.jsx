@@ -15,18 +15,16 @@ export default function Home() {
     navigate.push("/login");
   };
   return (
-    <div className="w-screen h-screen bg-blue-600 flex flex-col items-center">
-      <div className="w-full h-[46%] bg-red-500">
-        <Image src={PhotoAwal} alt="" width="400" height="470" />
-      </div>
-      <div className="w-screen p-4 z-10 flex -mt-10 flex-col gap-4 justify-center items-center text-white ">
+    <div className="home w-screen h-screen bg-blue-600 flex flex-col items-center">
+      <div className="left w-full h-[46%] bg-red-500"></div>
+      <div className="right w-screen p-4 z-10 flex -mt-10 flex-col gap-4 justify-center items-center text-white ">
         <Image src={Logo} alt="" />
         <h1 className="text-[30px] text-white">KTBBDApp</h1>
         <p className="text-center text-[20px]">
           Kumpulan foto, pengumuman acara, dan aktivitas warga Komplek Bank Bumi
           Daya
         </p>
-        <div className="w-full flex  gap-2">
+        <div className="buttonOpt w-full flex  gap-2">
           <button
             className="w-full p-3 bg-blue-400 rounded-md"
             onClick={handleLogin}

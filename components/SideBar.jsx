@@ -13,6 +13,7 @@ import { BsFillCalendarEventFill, BsImageFill } from "react-icons/bs";
 import { MdAddPhotoAlternate } from "react-icons/md";
 import Logo1 from "../assets/Logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const Cms = () => {
   const { Header, Content, Footer, Sider } = Layout;
@@ -26,7 +27,7 @@ const Cms = () => {
           <div className="logo" />
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item icon={Logo}>
-              <h1 className="ml-2 flex items-center  mt-2 text-white font-light">
+              <h1 className="ml-2 flex items-center  mt-2   font-medium text-gray-400 text-lg ">
                 KTBBD
               </h1>
             </Menu.Item>
@@ -45,8 +46,9 @@ const Cms = () => {
             </Menu.Item>
 
             <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-              <Menu.Item key="6">Admin</Menu.Item>
-              <Menu.Item key="7">Photographer</Menu.Item>
+              <Menu.Item key="7">Data warga</Menu.Item>
+              <Menu.Item key="8">Admin</Menu.Item>
+              <Menu.Item key="9">Photographer</Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>

@@ -42,9 +42,12 @@ const index = () => {
   };
 
   return (
-    <div className="w-screen h-screen p-4 flex flex-col gap-4  items-center">
-      <h1 className="text-2xl">Login</h1>
-      <form className="w-full flex flex-col gap-4 " onSubmit={handleSubmit}>
+    <div className="w-screen h-screen bg-[#332FD0]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
+      <form
+        className="w-full max-w-[700px] flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  "
+        onSubmit={handleSubmit}
+      >
+        <h1 className="text-2xl xl:text-center text-center">Login</h1>
         <div className="form_group flex flex-col gap-2">
           <label htmlFor="nama" className="text-lg font-light uppercase">
             Nama lengkap
@@ -79,14 +82,14 @@ const index = () => {
               className="w-full outline-none bg-transparent  "
             />
           </div>
+          <button
+            className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
+            onClick={handleNext}
+          >
+            Login
+          </button>
         </div>
       </form>
-      <button
-        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
-        onClick={handleNext}
-      >
-        Login
-      </button>
     </div>
   );
 };

@@ -43,3 +43,36 @@ a {
     transform: scale(1);
   }
 }
+.left {
+  background-image: url("../assets/splash.jpg");
+}
+
+/* RESPONSIVE  */
+@media only screen and (min-width: 800px) {
+  .home {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  .photoAwawl {
+    width: 100%;
+    height: 100%;
+  }
+  .left {
+    width: 50%;
+    height: 100%;
+    background-image: url("../assets/splash.jpg");
+    background-size: cover;
+  }
+  .right {
+    width: 50%;
+  }
+  .buttonOpt {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
