@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -19,8 +20,8 @@ a {
   box-sizing: border-box;
 }
 .modalLogout {
-  -webkit-animation: modalLogout 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: modalLogout 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: modalLogout 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: modalLogout 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes modalLogout {
   0% {

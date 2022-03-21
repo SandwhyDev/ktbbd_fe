@@ -17,8 +17,11 @@ const CardAcara = ({
           />
           <div className="p-2 ">
             <h3 className="text-lg font-bold">{nama_acara}</h3>
-            <p className="text-gray-500 text-sm "> {hari}</p>
-            <p className="text-gray-500 text-sm "> {jadwal}</p>
+            <p className="text-gray-500 text-sm ">
+              {" "}
+              {hari} {jadwal} WIB
+            </p>
+            {/* <p className="text-gray-500 text-sm "> </p> */}
           </div>
         </div>
       </Link>

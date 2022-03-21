@@ -58,11 +58,11 @@ const EditProfile = () => {
   };
   return (
     <div className="w-screen h-screen flex flex-col  items-center">
-      <div className="w-full h-12 shadow-md flex gap-20 items-center px-4 ">
-        <span className="text-3xl" onClick={handleBack}>
+      <div className="w-full h-12 shadow-md flex gap-24 justify-center   items-center p-4 ">
+        {/* <span className="text-xl" onClick={handleBack}>
           <BsArrowLeft />
-        </span>
-        <h1 className="text-xl font-bold">Edit Profile</h1>
+        </span> */}
+        <h1 className="text-xl  ">Edit Profile</h1>
       </div>
       <form className="w-full flex flex-col gap-4 p-4 " onSubmit={handleSubmit}>
         <div className="form_group flex flex-col gap-2">
@@ -133,7 +133,7 @@ const EditProfile = () => {
               name="blok"
               id="blok"
               placeholder="B1"
-              className="w-full p-3 border-b-[1px] border-gray-400 outline-none uppercase "
+              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
             />
           </div>
           <div className="form_group flex flex-col gap-2">
@@ -145,7 +145,7 @@ const EditProfile = () => {
               name="no"
               id="no"
               placeholder="91"
-              className="w-full p-3 border-b-[1px] border-gray-400 outline-none uppercase "
+              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
             />
           </div>
         </div>
@@ -161,7 +161,7 @@ const EditProfile = () => {
               id="rt"
               value="02"
               disabled
-              className="w-full p-3 border-b-[1px] border-gray-400 outline-none uppercase bg-transparent"
+              className="w-full p-3 border-b-[1px] border-gray-400  outline-none uppercase bg-transparent"
             />
           </div>
           <div className="form_group flex flex-col gap-2">
@@ -173,7 +173,7 @@ const EditProfile = () => {
               name="rw"
               id="rw"
               placeholder="03"
-              className="w-full p-3 border-b-[1px] border-gray-400 outline-none uppercase "
+              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
             />
           </div>
         </div>

@@ -10,7 +10,7 @@ const Navbar = ({ title = "title", back = "/home" }) => {
           <BsArrowLeft />
         </span>
       </Link>
-      <h1 className="text-lg font-semibold">{title}</h1>
+      <h1 className="text-xl font-semibold">{title}</h1>
       <div></div>
     </div>
   );

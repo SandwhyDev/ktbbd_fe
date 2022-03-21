@@ -15,7 +15,12 @@ const profile = () => {
   };
   return (
     <div className="w-screen h-screen flex flex-col gap-2">
-      <Navbar title="Profile" />
+      <div className="w-full h-12 shadow-md flex gap-20 justify-center items-center px-4 ">
+        {/* <span className="text-3xl" onClick={handleBack}>
+          <BsArrowLeft />
+        </span> */}
+        <h1 className="text-xl ">Edit Profile</h1>
+      </div>
       <div className="w-full h-full flex flex-col gap-4 p-4">
         <button
           className="w-full h-12 border-[.5px] border-gray-500 rounded-full font-light"
