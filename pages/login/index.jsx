@@ -4,6 +4,7 @@ import { MdLockOutline } from "react-icons/md";
 import { useRouter } from "next/router";
 import ax from "../../libs/ax";
 import { Modal } from "antd";
+import Link from "next/link";
 
 const index = () => {
   const navigate = useRouter();
@@ -44,7 +45,7 @@ const index = () => {
   return (
     <div className="w-screen h-screen bg-[#332FD0]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
       <form
-        className="w-full max-w-[700px] flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  "
+        className="w-full max-w-[700px] flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg xl:text-black  "
         onSubmit={handleSubmit}
       >
         <h1 className="text-2xl xl:text-center text-center">Login</h1>
@@ -88,6 +89,9 @@ const index = () => {
           >
             Login
           </button>
+          <p className="text-black text-xl text-center">
+            Belum punya akun ?<Link href={"/daftar"}> Daftar</Link>
+          </p>
         </div>
       </form>
     </div>

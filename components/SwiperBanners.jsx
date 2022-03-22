@@ -6,11 +6,11 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 const SwiperBanners = () => {
   return (
-    <div className="w-full h-44 bg-red-500 ">
+    <div className="w-full h-44 bg-red-500 sm:h-[500px] ">
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 2500 }}
-        className="w-full h-44"
+        className="w-full h-full"
         loop={true}
         pagination={{ clickable: true }}
       >

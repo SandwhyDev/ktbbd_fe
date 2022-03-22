@@ -14,12 +14,14 @@ import { MdAddPhotoAlternate } from "react-icons/md";
 import Logo1 from "../assets/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Cms = () => {
+const Sidebar = () => {
   const { Header, Content, Footer, Sider } = Layout;
   const { SubMenu } = Menu;
   const Logo = <Image src={Logo1} alt="me" width="30" height="30" />;
 
+  const router = useRouter();
   return (
     <div>
       <Layout style={{ minHeight: "100vh" }}>
@@ -45,17 +47,19 @@ const Cms = () => {
               Upload Dokumentasi
             </Menu.Item>
 
-            <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
+            <SubMenu key="sub2" icon={<TeamOutlined />} title="Data">
               <Menu.Item key="7">Data warga</Menu.Item>
               <Menu.Item key="8">Admin</Menu.Item>
               <Menu.Item key="9">Photographer</Menu.Item>
             </SubMenu>
           </Menu>
         </Sider>
-        <Layout className="site-layout"></Layout>
+        <Content className="w-screen h-screen" key="1">
+          <div className="w-full h-full bg-red-500">Bill is a cat.</div>
+        </Content>
       </Layout>
     </div>
   );
 };
 
-export default Cms;
+export default Sidebar;

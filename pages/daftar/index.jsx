@@ -51,9 +51,9 @@ const index = () => {
     navigate.push("/home");
   };
   return (
-    <div className="w-screen h-screen bg-[#332FD0]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0]  ">
+    <div className="w-screen h-screen bg-[#4061fb]  p-10 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:  ">
       <form
-        className="w-full  max-w-[400px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  "
+        className="w-full  max-w-[700px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  "
         onSubmit={handleSubmit}
       >
         <h1 className="text-2xl xl:text-center text-center">
@@ -113,7 +113,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex flex-col xl:flex xl:flex-row ">
+        <div className="flex flex-col sm:flex sm:flex-row gap-2 ">
           <div className="w-full flex gap-2">
             <div className="form_group  flex flex-col gap-2">
               <label htmlFor="blok" className="text-lg font-light uppercase">
