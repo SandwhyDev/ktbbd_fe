@@ -28,7 +28,9 @@ const index = ({ data_acara, data_dokumentasi }) => {
           </span>
         </div>
         <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full lg:justify-start  ">
-          <CardAcara
+          <CardAcara />
+          <CardAcara />
+          {/* <CardAcara
             key={data_acara[0]?.id}
             nama_acara={data_acara[0]?.nama_acara}
             hari={data_acara[0]?.hari_tanggal}
@@ -41,7 +43,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
             hari={data_acara[1]?.hari_tanggal}
             jadwal={data_acara[1]?.jam}
             banner={data_acara[1]?.banner.location}
-          />
+          /> */}
         </div>
       </div>
 
@@ -56,20 +58,23 @@ const index = ({ data_acara, data_dokumentasi }) => {
         </div>
         <div className="w-full flex flex-col gap-2 mb-12 lg:flex lg:flex-row lg:h-[200px]">
           <div className="lg:w-[300px] lg:h-[300px]  ">
-            <CardDokumentasi
+            <CardDokumentasi />
+            {/* <CardDokumentasi
               title={data_dokumentasi[0]?.nama_acara}
               tanggal={data_dokumentasi[0]?.tanggal_acara}
               img1={data_dokumentasi[0]?.photo[3].location}
               img2={data_dokumentasi[0]?.photo[7].location}
-            />
+            /> */}
           </div>
           <div className="lg:w-[300px] lg:h-[300px] ">
-            <CardDokumentasi
+            <CardDokumentasi />
+
+            {/* <CardDokumentasi
               title={data_dokumentasi[1]?.nama_acara}
               tanggal={data_dokumentasi[1]?.tanggal_acara}
               img1={data_dokumentasi[1]?.photo[5].location}
               img2={data_dokumentasi[1]?.photo[2].location}
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -79,16 +84,16 @@ const index = ({ data_acara, data_dokumentasi }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const acara = await ax.get("/acara_read");
-  const dokumentasi = await ax.get("/dokumentasi_read");
+// export async function getServerSideProps() {
+//   const acara = await ax.get("/acara_read");
+//   const dokumentasi = await ax.get("/dokumentasi_read");
 
-  return {
-    props: {
-      data_acara: acara.data.query,
-      data_dokumentasi: dokumentasi.data.query,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data_acara: acara.data.query,
+//       data_dokumentasi: dokumentasi.data.query,
+//     },
+//   };
+// }
 
 export default index;

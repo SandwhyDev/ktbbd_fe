@@ -10,7 +10,12 @@ const DokumentasiAcara = ({ data }) => {
     <div className="w-screen min-h-screen flex flex-col gap-2">
       <Navbar title="Dokumentasi Acara" />
       <div className="flex flex-col gap-2 w-full p-4">
-        {data.map((e) => {
+        <CardDokumentasi />
+        <CardDokumentasi />
+        <CardDokumentasi />
+        <CardDokumentasi />
+        <CardDokumentasi />
+        {/* {data.map((e) => {
           return (
             <CardDokumentasi
               key={e.id}
@@ -20,21 +25,21 @@ const DokumentasiAcara = ({ data }) => {
               img2={e.photo[7].location}
             />
           );
-        })}
+        })} */}
       </div>
-      <div className="w-full mt-6">
+      <div className="w-full mt-8">
         <Footer />
       </div>
     </div>
   );
 };
 
-export async function getServerSideProps() {
-  const result = await ax.get("/dokumentasi_read");
-  return {
-    props: {
-      data: result.data.query,
-    },
-  };
-}
+// export async function getServerSideProps() {
+//   const result = await ax.get("/dokumentasi_read");
+//   return {
+//     props: {
+//       data: result.data.query,
+//     },
+//   };
+// }
 export default DokumentasiAcara;

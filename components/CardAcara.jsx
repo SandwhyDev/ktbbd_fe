@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 const CardAcara = ({
-  nama_acara,
-  hari,
-  jadwal,
+  nama_acara = "nama acara",
+  hari = "sabtu, 25 maret 2022",
+  jadwal = "16:00",
   banner = "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 }) => {
   return (
-    <div className="lg:w-[300px] lg:h-[300px]">
+    <div className="lg:w-[300px] lg:h-[300px] w-full">
       <Link href={`/acara/${nama_acara}`}>
         <div className="w-full  flex flex-col shadow-md rounded-lg  ">
           <img

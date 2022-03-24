@@ -12,7 +12,11 @@ const index = ({ data_acara }) => {
       <Navbar title="Pengumuman Acara" />
 
       <div className="flex flex-col gap-2 w-full p-4 ">
-        {data_acara.map((e) => {
+        <CardAcara />
+        <CardAcara />
+        <CardAcara />
+        <CardAcara />
+        {/* {data_acara.map((e) => {
           return (
             <CardAcara
               key={e.id}
@@ -22,7 +26,7 @@ const index = ({ data_acara }) => {
               banner={e.banner.location}
             />
           );
-        })}
+        })} */}
       </div>
       <div className="w-full mt-8">
         <Footer />
@@ -31,14 +35,14 @@ const index = ({ data_acara }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const acara = await ax.get("/acara_read");
+// export async function getServerSideProps() {
+//   const acara = await ax.get("/acara_read");
 
-  return {
-    props: {
-      data_acara: acara.data.query,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data_acara: acara.data.query,
+//     },
+//   };
+// }
 
 export default index;

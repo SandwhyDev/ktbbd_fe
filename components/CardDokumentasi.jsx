@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 const CardDokumentasi = ({
-  title,
-  tanggal,
+  title = "acara dokumentasi",
+  tanggal = "20 maret 2022 - 23 maret 2022",
   img1 = "https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
   img2 = "https://images.pexels.com/photos/1157557/pexels-photo-1157557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 }) => {
