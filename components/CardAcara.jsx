@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 const CardAcara = ({
   nama_acara = "nama acara",
   hari = "sabtu, 25 maret 2022",
@@ -10,16 +12,23 @@ const CardAcara = ({
     <div className="lg:w-[300px] lg:h-[300px] w-full">
       <Link href={`/acara/${nama_acara}`}>
         <div className="w-full  flex flex-col shadow-md rounded-lg  ">
-          <img
+          <Image
+            src={banner}
+            width={100}
+            height={50}
+            layout="responsive"
+            className="w-full h-[70%] object-cover rounded-t-lg"
+          />
+          {/* <img
             src={banner}
             alt=""
             className="w-full h-[70%] object-cover rounded-t-lg"
-          />
+          /> */}
           <div className="p-2 ">
             <h3 className="text-lg font-bold">{nama_acara}</h3>
             <p className="text-gray-500 text-sm ">
               {" "}
-              {hari} {jadwal} WIB
+              {hari} | {jadwal} WIB
             </p>
             {/* <p className="text-gray-500 text-sm "> </p> */}
           </div>

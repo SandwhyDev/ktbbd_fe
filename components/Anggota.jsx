@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Anggota = ({
   position = "position",
@@ -10,11 +11,18 @@ const Anggota = ({
       <h1 className="text-xl font-bold capitalize">{position}</h1>
       <div className="w-[300px] h-[300px] ">
         <div className="relative">
-          <img
+          <Image
+            src={image}
+            width={100}
+            height={150}
+            layout="responsive"
+            className="w-full h-[450px] object-cover rounded-lg "
+          />
+          {/* <img
             src={image}
             alt=""
             className="w-full h-[450px] object-cover rounded-lg "
-          />
+          /> */}
 
           <div className="w-full p-4 absolute bottom-0 bg-gradient-to-b from-transparent to-black/80 rounded-lg  ">
             <h1 className="text-xl font-bold text-white capitalize">{name}</h1>

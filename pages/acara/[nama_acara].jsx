@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import { BsArrowLeft } from "react-icons/bs";
 import Footer from "../../components/Footer";
 import ax from "../../libs/ax";
+import Image from "next/image";
 
 const DetailAcara = ({ data }) => {
   console.log(data);
@@ -16,11 +17,18 @@ const DetailAcara = ({ data }) => {
             alt=""
             className="w-full h-44 object-cover"
           /> */}
-          <img
+          <Image
+            src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            width={100}
+            height={60}
+            layout="responsive"
+            className="object-cover"
+          />
+          {/* <img
             src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt=""
             className="w-full h-44 object-cover"
-          />
+          /> */}
         </div>
         {/* <h1 className="text-xl font-bold text-center "></h1> */}
         <div className="w-full px-4 flex flex-col gap-2">

@@ -10,52 +10,49 @@ import { Modal } from "antd";
 const index = () => {
   const navigate = useRouter();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { nama, password, nomor_hp, blok, no, rw } = e.target;
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const { nama, password, nomor_hp, blok, no, rw } = e.target;
 
-    console.log({
-      nama: nama.value,
-      password: password.value,
-      nomor_hp: nomor_hp.value,
-      blok: blok.value,
-      no: no.value,
-      rw: rw.value,
-    });
+  //   console.log({
+  //     nama: nama.value,
+  //     password: password.value,
+  //     nomor_hp: nomor_hp.value,
+  //     blok: blok.value,
+  //     no: no.value,
+  //     rw: rw.value,
+  //   });
 
-    ax.post("/user_create", {
-      nama: nama.value,
-      password: password.value,
-      nomor_hp: parseInt(nomor_hp.value),
-      blok: blok.value,
-      no: parseInt(no.value),
-      rw: parseInt(rw.value),
-    })
-      .then((response) => {
-        if (response.status == 201) {
-          sessionStorage.setItem("_token", response.data.token);
-          Modal.success({
-            title: "Daftar Berhasil",
-          });
-          navigate.push("/home");
-        }
-      })
-      .catch((err) => {
-        Modal.error({
-          title: err.response.data.msg,
-        });
-      });
-  };
+  //   ax.post("/user_create", {
+  //     nama: nama.value,
+  //     password: password.value,
+  //     nomor_hp: parseInt(nomor_hp.value),
+  //     blok: blok.value,
+  //     no: parseInt(no.value),
+  //     rw: parseInt(rw.value),
+  //   })
+  //     .then((response) => {
+  //       if (response.status == 201) {
+  //         sessionStorage.setItem("_token", response.data.token);
+  //         Modal.success({
+  //           title: "Daftar Berhasil",
+  //         });
+  //         navigate.push("/home");
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       Modal.error({
+  //         title: err.response.data.msg,
+  //       });
+  //     });
+  // };
 
   const handleNext = () => {
     navigate.push("/home");
   };
   return (
     <div className="w-screen h-screen bg-[#4061fb]  p-10 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:  ">
-      <form
-        className="w-full  max-w-[700px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  "
-        onSubmit={handleSubmit}
-      >
+      <form className="w-full  max-w-[700px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  ">
         <h1 className="text-2xl xl:text-center text-center">
           Daftar Warga BBD
         </h1>
@@ -169,10 +166,13 @@ const index = () => {
             </div>
           </div>
         </div>
-        <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3">
-          Daftar
-        </button>
       </form>
+      <button
+        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
+        onClick={handleNext}
+      >
+        Daftar
+      </button>
     </div>
   );
 };
