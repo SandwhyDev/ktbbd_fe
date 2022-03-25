@@ -10,7 +10,7 @@ const CardDokumentasi = ({
 }) => {
   return (
     <div>
-      <Link href={"/dokumentasi/sandy"}>
+      <Link href={"/dokumentasi/sandy"} passHref>
         <div className="w-full h-44 bg-white shadow-md rounded-lg">
           <div className=" w-full h-full relative ">
             <Image

@@ -3,12 +3,12 @@ import React from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { MdLockOutline } from "react-icons/md";
 import { FiUser } from "react-icons/fi";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import ax from "../../libs/ax";
 import { Modal } from "antd";
 
 const index = () => {
-  const navigate = useRouter();
+  // const navigate = useRouter();
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -47,9 +47,9 @@ const index = () => {
   //     });
   // };
 
-  const handleNext = () => {
-    navigate.push("/home");
-  };
+  // const handleNext = () => {
+  //   navigate.push("/home");
+  // };
   return (
     <div className="w-screen h-screen bg-[#4061fb]  p-10 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:  ">
       <form className="w-full  max-w-[700px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  ">
@@ -169,7 +169,7 @@ const index = () => {
       </form>
       <button
         className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
-        onClick={handleNext}
+        // onClick={handleNext}
       >
         Daftar
       </button>

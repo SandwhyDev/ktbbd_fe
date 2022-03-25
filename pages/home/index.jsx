@@ -22,7 +22,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Pengumuman Acara</h1>
           <span className="text-2xl font-bold">
-            <Link href={"/pengumanAcara"}>
+            <Link href={"/pengumanAcara"} passHref>
               <BsArrowRight />
             </Link>
           </span>
@@ -51,7 +51,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Dokumentasi Acara</h1>
           <span className="text-2xl font-bold">
-            <Link href={"/dokumentasiAcara"}>
+            <Link href={"/dokumentasiAcara"} passHref>
               <BsArrowRight />
             </Link>
           </span>
