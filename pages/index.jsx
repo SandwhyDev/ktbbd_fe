@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import PhotoAwal from "../assets/splash.jpg";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.png";
 import { useRouter } from "next/router";
 export default function Home() {
   const navigate = useRouter();
