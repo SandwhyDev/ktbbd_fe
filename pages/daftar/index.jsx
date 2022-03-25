@@ -51,8 +51,8 @@ const index = () => {
   //   navigate.push("/home");
   // };
   return (
-    <div className="w-screen h-screen bg-[#4061fb]  p-10 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:  ">
-      <form className="w-full  max-w-[700px]  flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg  ">
+    <div className="w-screen h-screen bg-[#4061fb]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  ">
+      <div className="w-full  max-w-[700px]  flex flex-col gap-4  xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-4 rounded-lg  ">
         <h1 className="text-2xl xl:text-center text-center">
           Daftar Warga BBD
         </h1>
@@ -110,7 +110,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex sm:flex-row gap-2 ">
+        <div className="flex flex-col  gap-2 ">
           <div className="w-full flex gap-2">
             <div className="form_group  flex flex-col gap-2">
               <label htmlFor="blok" className="text-lg font-light uppercase">
@@ -165,14 +165,21 @@ const index = () => {
               />
             </div>
           </div>
+          <Link href={"/home"} passHref>
+            <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-2">
+              Daftar
+            </button>
+          </Link>
         </div>
-      </form>
-      <button
-        className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3"
-        // onClick={handleNext}
-      >
-        Daftar
-      </button>
+        <p className="text-black text-xl text-center">
+          <p>
+            Belum punya akun ?{" "}
+            <Link href={"/login"} passHref>
+              Login
+            </Link>
+          </p>
+        </p>
+      </div>
     </div>
   );
 };

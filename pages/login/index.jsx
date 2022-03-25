@@ -80,14 +80,18 @@ const index = () => {
               className="w-full outline-none bg-transparent  "
             />
           </div>
-          <p className="text-black text-xl text-center">
+          <Link href={"/home"} passHref>
             <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2">
               Login
             </button>
-            Belum punya akun ?
-            <Link href={"/daftar"} passHref>
-              Daftar
-            </Link>
+          </Link>
+          <p className="text-black text-xl text-center ">
+            <p>
+              Belum punya akun ?{" "}
+              <Link href={"/daftar"} passHref>
+                Daftar
+              </Link>
+            </p>
           </p>
         </div>
       </div>

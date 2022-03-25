@@ -20,7 +20,7 @@ const CardImages = ({
           intr
           className="w-[118px] h-[118px] object-cover"
         /> */}
-        <img src={image} alt="" className="w-[118px] h-[118px] object-cover" />
+        <img src={image} alt="" className="w-[119px] h-[118px] object-cover" />
       </div>
 
       {click && (

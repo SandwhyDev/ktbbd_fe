@@ -14,7 +14,7 @@ const Footer = () => {
         </span>
       </Link>
 
-      <Link passHref href={"/pengumanAcara"}>
+      <Link passHref href={"/agenda"}>
         <span className="text-2xl text-blue-300">
           <BsNewspaper />
         </span>
