@@ -1,13 +1,13 @@
 import React from "react";
 import { FiUser } from "react-icons/fi";
 import { MdLockOutline } from "react-icons/md";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 // import ax from "../../libs/ax";
 // import { Modal } from "antd";
 import Link from "next/link";
 
 const index = () => {
-  // const navigate = useRouter();
+  const navigate = useRouter();
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -38,9 +38,9 @@ const index = () => {
   //     });
   // };
 
-  // const handleNext = () => {
-  //   navigate.push("/home");
-  // };
+  const handleNext = () => {
+    navigate.push("/home");
+  };
 
   return (
     <div className="w-screen h-screen bg-[#332FD0]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
@@ -81,7 +81,10 @@ const index = () => {
             />
           </div>
           <p className="text-black text-xl text-center">
-            <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2">
+            <button
+              className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2"
+              onClick={handleNext}
+            >
               Login
             </button>
             Belum punya akun ?
