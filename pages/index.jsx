@@ -16,6 +16,11 @@ export default function Home() {
   };
   return (
     <div className="home w-screen h-screen bg-blue-600 flex flex-col items-center">
+      <Head>
+        <title>KTBBD</title>
+        <meta name="description" content="Aplikasi komplek bank bumi data" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="left w-full h-[46%] bg-red-500"></div>
       <div className="right w-screen p-4 z-10 flex -mt-10 flex-col gap-4 justify-center items-center text-white ">
         <Image src={Logo} alt="" />
