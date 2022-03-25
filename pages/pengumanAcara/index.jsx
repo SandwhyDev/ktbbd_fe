@@ -12,10 +12,13 @@ const index = ({ data_acara }) => {
       <Navbar title="Pengumuman Acara" />
 
       <div className="flex flex-col gap-2 w-full p-4 ">
-        <CardAcara />
-        <CardAcara />
-        <CardAcara />
-        <CardAcara />
+        <div className=" lg:w-full lg:flex lg:flex-row flex flex-col gap-2 lg:items-center lg:justify-between ">
+          <CardAcara />
+          <CardAcara />
+          <CardAcara />
+          <CardAcara />
+          {/* <CardAcara /> */}
+        </div>
         {/* {data_acara.map((e) => {
           return (
             <CardAcara

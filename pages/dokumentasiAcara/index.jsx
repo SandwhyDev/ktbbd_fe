@@ -7,14 +7,17 @@ import ax from "../../libs/ax";
 
 const DokumentasiAcara = ({ data }) => {
   return (
-    <div className="w-screen min-h-screen flex flex-col gap-2">
+    <div className="w-full min-h-full flex flex-col gap-2">
       <Navbar title="Dokumentasi Acara" />
-      <div className="flex flex-col gap-2 w-full p-4">
-        <CardDokumentasi />
-        <CardDokumentasi />
-        <CardDokumentasi />
-        <CardDokumentasi />
-        <CardDokumentasi />
+      <div className="flex flex-col gap-2 w-full p-4 ">
+        <div className=" lg:w-full lg:flex lg:flex-row flex flex-col gap-2  ">
+          <CardDokumentasi />
+          <CardDokumentasi />
+          <CardDokumentasi />
+          <CardDokumentasi />
+          <CardDokumentasi />
+        </div>
+
         {/* {data.map((e) => {
           return (
             <CardDokumentasi

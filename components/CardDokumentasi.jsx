@@ -11,8 +11,8 @@ const CardDokumentasi = ({
   return (
     <div>
       <Link href={"/dokumentasi/sandy"} passHref>
-        <div className="w-full h-44 bg-white shadow-md rounded-lg">
-          <div className=" w-full h-full flex relative ">
+        <div className="w-full h-44 bg-white shadow-md rounded-lg ">
+          <div className=" w-full h-full flex relative  ">
             {/* <Image
               src={img1}
               width={100}

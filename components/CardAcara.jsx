@@ -11,7 +11,7 @@ const CardAcara = ({
   return (
     <div className="lg:w-[300px] lg:h-[300px] w-full l">
       <Link href={`/acara/${nama_acara}`} passHref>
-        <div className="w-full  h-[200px] lg:h-[250px]  flex flex-col shadow-md rounded-lg  ">
+        <div className="w-full  h-[200px] lg:h-[250px] lg:w-[300px]  flex flex-col shadow-md rounded-lg  ">
           {/* <Image
             src={banner}
             width={100}

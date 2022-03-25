@@ -10,7 +10,7 @@ import ax from "../../libs/ax";
 const index = ({ data_acara, data_dokumentasi }) => {
   return (
     <div className="  w-screen min-h-screen  flex flex-col items-center sm:px-[50px] ">
-      <div className="w-full p-4 bg-white flex items-center justify-between">
+      <div className="w-full p-4 bg-white flex items-center justify-between lg:py-4 lg:px-0">
         <h1 className="text-lg font-bold">Halo, Users</h1>
         <div className="w-10 h-10 bg-blue-300"></div>
       </div>
@@ -18,7 +18,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
         <SwiperBanners />
       </div>
 
-      <div className="w-full p-4 flex flex-col gap-2 justify-between items-center  lg:h-[300px]">
+      <div className="w-full p-4 flex flex-col gap-2 justify-between items-center  lg:h-[300px] lg:py-4 lg:px-0 ">
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Pengumuman Acara</h1>
           <span className="text-2xl font-bold">
@@ -27,9 +27,13 @@ const index = ({ data_acara, data_dokumentasi }) => {
             </Link>
           </span>
         </div>
-        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full lg:justify-start  ">
+        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full  ">
           <CardAcara />
           <CardAcara />
+          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden">
+            <CardAcara />
+            <CardAcara />
+          </div>
           {/* <CardAcara
             key={data_acara[0]?.id}
             nama_acara={data_acara[0]?.nama_acara}
@@ -47,7 +51,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
         </div>
       </div>
 
-      <div className="w-full -mt-4 p-4 flex flex-col gap-2  items-center lg:h-[250px]">
+      <div className="w-full -mt-4 p-4 flex flex-col gap-2  items-center lg:h-[250px] lg:mt-2 lg:mb-10 lg:py-4 lg:px-0">
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Dokumentasi Acara</h1>
           <span className="text-2xl font-bold">
@@ -56,26 +60,27 @@ const index = ({ data_acara, data_dokumentasi }) => {
             </Link>
           </span>
         </div>
-        <div className="w-full flex flex-col gap-2 mb-12 lg:flex lg:flex-row lg:h-[200px]">
-          <div className="lg:w-[300px] lg:h-[300px]  ">
+        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full lg:justify-between mb-10   ">
+          <CardDokumentasi />
+          <CardDokumentasi />
+          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden">
             <CardDokumentasi />
-            {/* <CardDokumentasi
-              title={data_dokumentasi[0]?.nama_acara}
-              tanggal={data_dokumentasi[0]?.tanggal_acara}
-              img1={data_dokumentasi[0]?.photo[3].location}
-              img2={data_dokumentasi[0]?.photo[7].location}
-            /> */}
-          </div>
-          <div className="lg:w-[300px] lg:h-[300px] ">
             <CardDokumentasi />
-
-            {/* <CardDokumentasi
-              title={data_dokumentasi[1]?.nama_acara}
-              tanggal={data_dokumentasi[1]?.tanggal_acara}
-              img1={data_dokumentasi[1]?.photo[5].location}
-              img2={data_dokumentasi[1]?.photo[2].location}
-            /> */}
           </div>
+          {/* <CardAcara
+            key={data_acara[0]?.id}
+            nama_acara={data_acara[0]?.nama_acara}
+            hari={data_acara[0]?.hari_tanggal}
+            jadwal={data_acara[0]?.jam}
+            banner={data_acara[0]?.banner.location}
+          />
+          <CardAcara
+            key={data_acara[1]?.id}
+            nama_acara={data_acara[1]?.nama_acara}
+            hari={data_acara[1]?.hari_tanggal}
+            jadwal={data_acara[1]?.jam}
+            banner={data_acara[1]?.banner.location}
+          /> */}
         </div>
       </div>
 
