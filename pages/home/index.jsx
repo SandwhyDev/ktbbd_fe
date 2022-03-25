@@ -27,10 +27,10 @@ const index = ({ data_acara, data_dokumentasi }) => {
             </Link>
           </span>
         </div>
-        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full  ">
+        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full   ">
           <CardAcara />
           <CardAcara />
-          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden">
+          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden lg:items-end lg:justify-end">
             <CardAcara />
             <CardAcara />
           </div>

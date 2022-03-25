@@ -9,7 +9,7 @@ const CardAcara = ({
   banner = "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
 }) => {
   return (
-    <div className="lg:w-[300px] lg:h-[300px] w-full l">
+    <div className="lg:w-[310px] lg:h-[300px] w-full ">
       <Link href={`/acara/${nama_acara}`} passHref>
         <div className="w-full  h-[200px] lg:h-[250px] lg:w-[300px]  flex flex-col shadow-md rounded-lg  ">
           {/* <Image

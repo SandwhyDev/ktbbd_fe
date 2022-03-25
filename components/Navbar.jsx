@@ -4,7 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 
 const Navbar = ({ title = "title", back = "/home" }) => {
   return (
-    <div className="w-full h-12 p-4 lg:bg-red-200  shadow-md flex items-center justify-between z-20">
+    <div className="w-full h-12 p-4  shadow-md flex items-center justify-between z-20">
       <Link href={back} passHref>
         <span className="text-xl">
           <BsArrowLeft />
