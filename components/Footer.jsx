@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className=" w-full h-12 px-4 fixed bottom-0 bg-white flex gap-4 items-center justify-between mt-16 border-t-[.5px] border-blue-300">
+    <div className=" w-full h-12 px-4 fixed bottom-0 bg-white flex gap-4 items-center justify-between mt-16 border-t-[.5px] border-blue-300 lg:px-[60px]">
       <Link passHref href={"/home"}>
         <span className="text-2xl text-blue-300">
           <AiOutlineHome />

@@ -21,7 +21,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
       <div className="w-full p-4 flex flex-col gap-2 justify-between items-center  lg:h-[300px] lg:py-4 lg:px-0 ">
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Pengumuman Acara</h1>
-          <span className="text-2xl font-bold">
+          <span className="text-2xl font-bold lg:hidden">
             <Link href={"/pengumanAcara"} passHref>
               <BsArrowRight />
             </Link>
@@ -54,7 +54,7 @@ const index = ({ data_acara, data_dokumentasi }) => {
       <div className="w-full -mt-4 p-4 flex flex-col gap-2  items-center lg:h-[250px] lg:mt-2 lg:mb-10 lg:py-4 lg:px-0">
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl font-bold">Dokumentasi Acara</h1>
-          <span className="text-2xl font-bold">
+          <span className="text-2xl font-bold lg:hidden">
             <Link href={"/dokumentasiAcara"} passHref>
               <BsArrowRight />
             </Link>
