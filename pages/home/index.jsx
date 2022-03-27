@@ -23,7 +23,7 @@ const Home = ({ data_acara, data_dokumentasi }) => {
       <div className="w-full p-4 bg-white flex items-center justify-between lg:py-4 lg:px-0">
         <h1 className="text-xl font-bold text-blue-400 ">Halo, Users</h1>
         <div className="w-10 h-10 bg-blue-300">
-          <Image src={"/Logo.png"} width={40} height={40} />
+          <Image src={"/Logo.png"} alt="Logo" width={40} height={40} />
         </div>
       </div>
       <div className="w-full h-full bg-red-500 ">
