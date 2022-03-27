@@ -6,8 +6,9 @@ import { FiUser } from "react-icons/fi";
 // import { useRouter } from "next/router";
 import ax from "../../libs/ax";
 import { Modal } from "antd";
+import { BsArrowLeft } from "react-icons/bs";
 
-const index = () => {
+const Daftar = () => {
   // const navigate = useRouter();
 
   // const handleSubmit = (e) => {
@@ -51,11 +52,19 @@ const index = () => {
   //   navigate.push("/home");
   // };
   return (
-    <div className="w-screen h-screen bg-[#4061fb]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  ">
+    <div className="w-screen h-screen bg-[#eaeaf3]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  ">
       <div className="w-full  max-w-[700px]  flex flex-col gap-4  xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-4 rounded-lg  ">
-        <h1 className="text-2xl xl:text-center text-center">
-          Daftar Warga BBD
-        </h1>
+        <div className="flex items-center w-full justify-between">
+          <Link href="/home" passHref>
+            <span className="text-xl cursor-pointer text-blue-400">
+              <BsArrowLeft />
+            </span>
+          </Link>
+          <h1 className="text-2xl xl:text-center text-center text-blue-400">
+            Daftar
+          </h1>
+          <div></div>
+        </div>
         <div className="form_group flex flex-col gap-2">
           <label htmlFor="nama" className="text-lg font-light uppercase">
             Nama lengkap
@@ -184,4 +193,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Daftar;

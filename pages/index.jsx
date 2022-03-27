@@ -31,7 +31,7 @@ export default function Home() {
         <span className="-mt-6">
           <Image src={"/Logo.png"} alt="logo bbd" width={100} height={100} />
         </span>
-        <h1 className="text-[30px] text-white">KTBBDApp</h1>
+        <h1 className="text-[30px] text-white">KTBBD</h1>
         {/* <p className="text-center text-[20px]">
           Kumpulan foto, pengumuman acara, dan aktivitas warga Komplek Bank Bumi
           Daya

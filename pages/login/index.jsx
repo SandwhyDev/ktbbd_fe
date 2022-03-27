@@ -5,6 +5,7 @@ import { MdLockOutline } from "react-icons/md";
 // import ax from "../../libs/ax";
 // import { Modal } from "antd";
 import Link from "next/link";
+import { BsArrowLeft } from "react-icons/bs";
 
 const Login = () => {
   // const navigate = useRouter();
@@ -43,9 +44,19 @@ const Login = () => {
   // };
 
   return (
-    <div className="w-screen h-screen bg-[#332FD0]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
+    <div className="w-screen h-screen bg-[#eaeaf3]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
       <div className="w-full max-w-[700px] flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg xl:text-black  ">
-        <h1 className="text-2xl xl:text-center text-center">Login</h1>
+        <div className="flex items-center w-full justify-between">
+          <Link href="/home" passHref>
+            <span className="text-xl cursor-pointer text-blue-400">
+              <BsArrowLeft />
+            </span>
+          </Link>
+          <h1 className="text-2xl xl:text-center text-center text-blue-400">
+            Masuk
+          </h1>
+          <div></div>
+        </div>
         <div className="form_group flex flex-col gap-2">
           <label htmlFor="nama" className="text-lg font-light uppercase">
             Nama lengkap
@@ -80,13 +91,13 @@ const Login = () => {
               className="w-full outline-none bg-transparent  "
             />
           </div>
-          <div className="flex flex-col sm:flex sm:flex-row sm:gap-2 sm:items-center sm:justify-between ">
+          <div className="flex flex-col sm:flex sm:flex-row sm:gap-2 sm:items-center sm:justify-between gap-3 ">
             <Link href={"/home"} passHref>
               <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2 sm:w-[60%]">
                 Login
               </button>
             </Link>
-            <p className="text-black text-xl text-center sm:w-[40%] ">
+            <p className="text-black text-xl text-center sm:w-[40%]  ">
               <p>
                 Belum punya akun ?{" "}
                 <Link href={"/daftar"} passHref>

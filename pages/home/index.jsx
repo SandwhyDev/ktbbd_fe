@@ -7,7 +7,7 @@ import CardAcara from "../../components/CardAcara";
 import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
-const index = ({ data_acara, data_dokumentasi }) => {
+const Home = ({ data_acara, data_dokumentasi }) => {
   return (
     <div className="  w-screen min-h-screen  flex flex-col items-center sm:px-[50px] ">
       <div className="w-full p-4 bg-white flex items-center justify-between lg:py-4 lg:px-0">
@@ -20,19 +20,19 @@ const index = ({ data_acara, data_dokumentasi }) => {
         <SwiperBanners />
       </div>
 
-      <div className="w-full p-4 flex flex-col gap-2 justify-between items-center  lg:h-[300px] lg:py-4 lg:px-0 ">
+      <div className="w-full p-4 flex flex-col gap-2 justify-between items-center  lg:h-[350px] lg:py-4 lg:px-0    ">
         <div className="w-full flex justify-between items-center">
           <h1 className="text-xl text-blue-400  ">Pengumuman Acara</h1>
-          <span className="text-2xl  font-bold lg:hidden text-blue-400">
+          <span className="text-2xl  font-bold xl:hidden text-blue-400">
             <Link href={"/pengumanAcara"} passHref>
               <BsArrowRight />
             </Link>
           </span>
         </div>
-        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full lg:gap-6  ">
+        <div className="w-full flex flex-col gap-2 md:flex md:flex-row md:h-[300px] md:w-full md:gap-6 md:overflow-x-hidden overflow-y-hidden  h-[415px] ">
           <CardAcara />
           <CardAcara />
-          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden lg:items-end ">
+          <div className="lg:w-full lg:h-[300px] lg:flex lg:flex-row gap-2  hidden lg:items-end   ">
             <CardAcara />
             <CardAcara />
           </div>
@@ -53,8 +53,8 @@ const index = ({ data_acara, data_dokumentasi }) => {
         </div>
       </div>
 
-      <div className="w-full -mt-4 p-4 flex flex-col gap-2  items-center lg:h-[250px] lg:mt-2 lg:mb-10 lg:py-4 lg:px-0">
-        <div className="w-full flex justify-between items-center">
+      <div className="w-full -mt-4 p-4 flex flex-col gap-2  items-center lg:h-[250px] lg:-mt-10 md:-mt-28 lg:mb-10 lg:py-4 lg:px-0">
+        <div className="w-full  flex justify-between items-center">
           <h1 className="text-xl text-blue-400   ">Dokumentasi Acara</h1>
           <span className="text-2xl text-blue-400 font-bold lg:hidden">
             <Link href={"/dokumentasiAcara"} passHref>
@@ -62,10 +62,10 @@ const index = ({ data_acara, data_dokumentasi }) => {
             </Link>
           </span>
         </div>
-        <div className="w-full flex flex-col gap-2 lg:flex lg:flex-row lg:h-[300px] lg:w-full lg:justify-between mb-10   ">
+        <div className="w-full  flex flex-col gap-2 md:flex md:flex-row md:h-[200px] md:w-full md:justify-between mb-10    ">
           <CardDokumentasi />
           <CardDokumentasi />
-          <div className="lg:w-full lg:h-full lg:flex lg:flex-row gap-2  hidden">
+          <div className="lg:w-[90%]  lg:h-full lg:flex lg:flex-row gap-2  hidden">
             <CardDokumentasi />
             <CardDokumentasi />
           </div>
@@ -103,4 +103,4 @@ const index = ({ data_acara, data_dokumentasi }) => {
 //   };
 // }
 
-export default index;
+export default Home;
