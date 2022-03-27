@@ -6,7 +6,7 @@ import { MdLockOutline } from "react-icons/md";
 // import { Modal } from "antd";
 import Link from "next/link";
 
-const index = () => {
+const Login = () => {
   // const navigate = useRouter();
 
   // const handleSubmit = (e) => {
@@ -86,7 +86,7 @@ const index = () => {
                 Login
               </button>
             </Link>
-            <p className="text-black text-xl text-center ">
+            <p className="text-black text-xl text-center sm:w-[40%] ">
               <p>
                 Belum punya akun ?{" "}
                 <Link href={"/daftar"} passHref>
@@ -101,4 +101,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Login;

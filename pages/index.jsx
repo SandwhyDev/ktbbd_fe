@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 export default function Home() {
   const navigate = useRouter();
@@ -13,24 +13,30 @@ export default function Home() {
   const handleLogin = () => {
     navigate.push("/login");
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigate.push("/home");
+    }, 3000);
+  }, []);
   return (
-    <div className="home w-screen h-screen bg-blue-600 flex flex-col items-center">
+    <div className="home w-screen h-screen bg-[#2D31FA] flex flex-col items-center justify-center">
       <Head>
         <title>KTBBD</title>
         <meta name="description" content="Aplikasi komplek bank bumi data" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="left w-full h-[46%] bg-red-500"></div>
-      <div className="right w-screen p-4 z-10 flex -mt-10 flex-col gap-4 justify-center items-center text-white lg:mt-20 ">
+      {/* <div className="left w-full h-[46%] bg-red-500"></div> */}
+      <div className="fadeInUp w-screen p-4 z-10 flex  flex-col gap-4 justify-center items-center text-white lg:mt-20 ">
         <span className="-mt-6">
           <Image src={"/Logo.png"} alt="logo bbd" width={100} height={100} />
         </span>
         <h1 className="text-[30px] text-white">KTBBDApp</h1>
-        <p className="text-center text-[20px]">
+        {/* <p className="text-center text-[20px]">
           Kumpulan foto, pengumuman acara, dan aktivitas warga Komplek Bank Bumi
           Daya
-        </p>
-        <div className="buttonOpt w-full flex  gap-2">
+        </p> */}
+        {/* <div className="buttonOpt w-full flex  gap-2">
           <button
             className="w-full p-3 bg-blue-400 rounded-md"
             onClick={handleLogin}
@@ -43,7 +49,7 @@ export default function Home() {
           >
             <h1 className=" text-blue-500">Daftar</h1>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
