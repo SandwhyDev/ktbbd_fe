@@ -9,8 +9,8 @@
   "short_name": "KTBBD",
   "icons": [
     {
-      "src": "/Logo_BBD-150x150.svg",
-      "sizes": "192x192",
+      "src": "/LOGO-100X100.svg",
+      "sizes": "100X100",
       "type": "image/svg+xml"
     },
     {
