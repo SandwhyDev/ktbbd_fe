@@ -14,18 +14,18 @@
       "type": "image/svg+xml"
     },
     {
-      "src": "/Logo_BBD-256x256.svg",
-      "sizes": "256x256",
+      "src": "/LOGO-100X100.svg",
+      "sizes": "100X100",
       "type": "image/svg+xml"
     },
     {
-      "src": "/Logo_BBD-384x384.svg",
-      "sizes": "384x384",
+      "src": "/LOGO-100X100.svg",
+      "sizes": "100X100",
       "type": "image/svg+xml"
     },
     {
-      "src": "/Logo_BBD-512x512.svg",
-      "sizes": "512x512",
+      "src": "/LOGO-100X100.svg",
+      "sizes": "100X100",
       "type": "image/svg+xml"
     }
   ]
