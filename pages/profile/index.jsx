@@ -12,6 +12,11 @@ const Profile = () => {
     LetLogout(!Logout);
   };
 
+  const handleLogout = () => {
+    sessionStorage.clear();
+    navigate.push("/home");
+  };
+
   const handleProfile = () => {
     navigate.push("/editProfile");
   };
@@ -53,7 +58,10 @@ const Profile = () => {
               >
                 tidak
               </button>
-              <button className="w-full h-12 bg-red-500 text-white capitalize rounded-xl">
+              <button
+                className="w-full h-12 bg-red-500 text-white capitalize rounded-xl"
+                onClick={handleLogout}
+              >
                 iya
               </button>
             </div>

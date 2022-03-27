@@ -1,7 +1,7 @@
 import React from "react";
 import { FiUser } from "react-icons/fi";
 import { MdLockOutline } from "react-icons/md";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 // import ax from "../../libs/ax";
 // import { Modal } from "antd";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import Head from "next/head";
 
 const Login = () => {
-  // const navigate = useRouter();
+  const navigate = useRouter();
 
   // const handleSubmit = (e) => {
   //   e.preventDefault();
@@ -40,9 +40,13 @@ const Login = () => {
   //     });
   // };
 
-  // const handleNext = () => {
-  //   navigate.push("/home");
-  // };
+  const handleNext = () => {
+    sessionStorage.setItem(
+      "token",
+      "1b48d37f21f9e1a6164fc3178807b2611c68a551fa70b75bae9e866c951045c8"
+    );
+    navigate.push("/home");
+  };
 
   return (
     <div className="w-screen h-screen bg-[#eaeaf3]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
@@ -98,11 +102,13 @@ const Login = () => {
             />
           </div>
           <div className="flex flex-col sm:flex sm:flex-row sm:gap-2 sm:items-center sm:justify-between gap-3 ">
-            <Link href={"/home"} passHref>
-              <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2 sm:w-[60%]">
-                Login
-              </button>
-            </Link>
+            <button
+              className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2 sm:w-[60%]"
+              onClick={handleNext}
+            >
+              Login
+            </button>
+
             <p className="text-black text-xl text-center sm:w-[40%]  ">
               <p>
                 Belum punya akun ?{" "}
