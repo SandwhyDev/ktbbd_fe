@@ -61,7 +61,7 @@ const Footer = () => {
 
       {!isLogin.login && (
         <div className="flex items-center gap-10 text-2xl h-12 sm:gap-[100px] md:gap-[150px] lg:gap-[200px] xl:gap-[250px]">
-          <Link passHref href={"/login"}>
+          <Link passHref href={"/contact"}>
             <span className="text-2xl cursor-pointer text-blue-300 ">
               <BsWhatsapp />
             </span>

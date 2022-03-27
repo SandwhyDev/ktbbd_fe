@@ -110,7 +110,7 @@ const Daftar = () => {
               <BsWhatsapp />
             </span>
             <input
-              type="phone"
+              type="number"
               name="nomor_hp"
               id="nomor_hp"
               placeholder="0812347563"
