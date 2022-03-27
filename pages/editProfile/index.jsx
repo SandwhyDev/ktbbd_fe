@@ -8,6 +8,7 @@ import ax from "../../libs/ax";
 import { Modal } from "antd";
 import { BsArrowLeft } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
+import Navbar from "../../components/Navbar";
 const EditProfile = () => {
   const navigate = useRouter();
 
@@ -58,13 +59,11 @@ const EditProfile = () => {
   };
   return (
     <div className="w-screen h-screen flex flex-col  items-center">
-      <div className="w-full h-12 shadow-md flex gap-24 justify-center   items-center p-4 ">
-        {/* <span className="text-xl" onClick={handleBack}>
-          <BsArrowLeft />
-        </span> */}
-        <h1 className="text-xl  ">Edit Profile</h1>
-      </div>
-      <form className="w-full flex flex-col gap-4 p-4 " onSubmit={handleSubmit}>
+      <Navbar title="Edit Profile" buttonBack="true" back="/profile" />
+      <form
+        className="w-full max-w-[700px] flex flex-col sm:mt-10 gap-4 p-4 "
+        onSubmit={handleSubmit}
+      >
         <div className="form_group flex flex-col gap-2">
           <label htmlFor="nama" className="text-lg font-light uppercase">
             Nama lengkap
@@ -123,58 +122,60 @@ const EditProfile = () => {
           </div>
         </div>
 
-        <div className="w-full flex gap-2">
-          <div className="form_group  flex flex-col gap-2">
-            <label htmlFor="blok" className="text-lg font-light uppercase">
-              Blok Rumah
-            </label>
-            <input
-              type="text"
-              name="blok"
-              id="blok"
-              placeholder="B1"
-              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
-            />
+        <div className="flex flex-col sm:flex sm:flex-row sm:gap-2">
+          <div className="w-full flex gap-2">
+            <div className="form_group  flex flex-col gap-2">
+              <label htmlFor="blok" className="text-lg font-light uppercase">
+                Blok Rumah
+              </label>
+              <input
+                type="text"
+                name="blok"
+                id="blok"
+                placeholder="B1"
+                className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
+              />
+            </div>
+            <div className="form_group flex flex-col gap-2">
+              <label htmlFor="no" className="text-lg font-light uppercase">
+                No. Rumah
+              </label>
+              <input
+                type="number"
+                name="no"
+                id="no"
+                placeholder="91"
+                className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
+              />
+            </div>
           </div>
-          <div className="form_group flex flex-col gap-2">
-            <label htmlFor="no" className="text-lg font-light uppercase">
-              No. Rumah
-            </label>
-            <input
-              type="number"
-              name="no"
-              id="no"
-              placeholder="91"
-              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
-            />
-          </div>
-        </div>
 
-        <div className="w-full flex gap-2">
-          <div className="form_group  flex flex-col gap-2">
-            <label htmlFor="rt" className="text-lg font-light">
-              RT
-            </label>
-            <input
-              type="number"
-              name="rt"
-              id="rt"
-              value="02"
-              disabled
-              className="w-full p-3 border-b-[1px] border-gray-400  outline-none uppercase bg-transparent"
-            />
-          </div>
-          <div className="form_group flex flex-col gap-2">
-            <label htmlFor="rw" className="text-lg font-light">
-              RW
-            </label>
-            <input
-              type="number"
-              name="rw"
-              id="rw"
-              placeholder="03"
-              className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
-            />
+          <div className="w-full flex gap-2">
+            <div className="form_group  flex flex-col gap-2">
+              <label htmlFor="rt" className="text-lg font-light">
+                RT
+              </label>
+              <input
+                type="number"
+                name="rt"
+                id="rt"
+                value="02"
+                disabled
+                className="w-full p-3 border-b-[1px] border-gray-400  outline-none uppercase bg-transparent"
+              />
+            </div>
+            <div className="form_group flex flex-col gap-2">
+              <label htmlFor="rw" className="text-lg font-light">
+                RW
+              </label>
+              <input
+                type="number"
+                name="rw"
+                id="rw"
+                placeholder="03"
+                className="w-full p-3 border-b-[1px] border-gray-400 bg-transparent outline-none uppercase "
+              />
+            </div>
           </div>
         </div>
         <button className="w-full p-4 border-blue-600 border-[.8px] text-xl text-blue-500 rounded-lg font-bold mt-3">

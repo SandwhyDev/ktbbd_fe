@@ -9,7 +9,7 @@ import ax from "../../libs/ax";
 const index = ({ data_acara }) => {
   return (
     <div className="w-screen min-h-screen flex flex-col gap-2">
-      <Navbar title="Pengumuman Acara" />
+      <Navbar title="Pengumuman Acara" buttonBack="true" />
 
       <div className="flex flex-col gap-2 w-full p-4 ">
         <div className=" lg:w-full lg:flex lg:flex-row flex flex-col gap-2 lg:items-center lg:justify-between ">

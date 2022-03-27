@@ -21,7 +21,9 @@ const Footer = () => {
       </Link>
 
       <Link passHref href={"/about"}>
-        <div className="rotateIn w-12 h-12 bg-blue-300 -mt-12 flex"></div>
+        <div className="rotateIn w-12 h-12 h1 bg-blue-300 -mt-[50px] flex">
+          <Image src={"/Logo.png"} width={50} height={40} />
+        </div>
       </Link>
 
       <Link passHref href={"/contact"}>

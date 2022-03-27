@@ -9,7 +9,7 @@ const DetailAcara = ({ data }) => {
   console.log(data);
   return (
     <div className="w-screen min-h-screen flex flex-col">
-      <Navbar back="/pengumanAcara" />
+      <Navbar back="/pengumanAcara" buttonBack="true" />
       <div className="w-full flex  flex-col gap-2">
         <div>
           {/* <img
@@ -46,10 +46,10 @@ const DetailAcara = ({ data }) => {
 
           <div className="">
             <h1 className="text-lg font-medium ">Jadwal Acara</h1>
-            {/* <p className="font-light">{data[0].hari_tanggal}</p> */}
+            {/* <p className="">{data[0].hari_tanggal}</p> */}
             <p>Sabtu, 24 maret 2022</p>
             {/* <p className="font-light">Waktu: {data[0].jam}</p> */}
-            <p className="font-light">Waktu: 16:00</p>
+            <p className="">Waktu: 16:00</p>
           </div>
         </div>
       </div>

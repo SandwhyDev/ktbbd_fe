@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 
-const Navbar = ({ title = "title", back = "/home" }) => {
+const Navbar = ({ title = "title", back = "/home", buttonBack = false }) => {
+  const [showBack, setShowBack] = useState(false);
+
   return (
-    <div className="w-full h-12 p-4  shadow-md flex items-center justify-between z-20">
-      <Link href={back} passHref>
-        <span className="text-xl">
-          <BsArrowLeft />
-        </span>
-      </Link>
+    <div
+      className={`w-full h-12 p-4  shadow-md flex items-center ${
+        buttonBack ? "justify-between" : "justify-center"
+      }   z-20`}
+    >
+      {buttonBack && (
+        <Link href={back} passHref>
+          <span className="text-xl">
+            <BsArrowLeft />
+          </span>
+        </Link>
+      )}
       <h1 className="text-xl font-semibold">{title}</h1>
-      <div></div>
+      <div className="bg-transparent"></div>
     </div>
   );
 };

@@ -101,7 +101,7 @@ const index = () => {
               <BsWhatsapp />
             </span>
             <input
-              type="number"
+              type="phone"
               name="nomor_hp"
               id="nomor_hp"
               placeholder="0812347563"
@@ -110,7 +110,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex flex-col  gap-2 ">
+        <div className="flex flex-col sm:flex sm:flex-row sm:gap-2   gap-2 ">
           <div className="w-full flex gap-2">
             <div className="form_group  flex flex-col gap-2">
               <label htmlFor="blok" className="text-lg font-light uppercase">
@@ -165,15 +165,15 @@ const index = () => {
               />
             </div>
           </div>
-          <Link href={"/home"} passHref>
-            <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-2">
-              Daftar
-            </button>
-          </Link>
         </div>
+        <Link href={"/home"} passHref>
+          <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-2">
+            Daftar
+          </button>
+        </Link>
         <p className="text-black text-xl text-center">
           <p>
-            Belum punya akun ?{" "}
+            Sudah punya akun ?{" "}
             <Link href={"/login"} passHref>
               Login
             </Link>

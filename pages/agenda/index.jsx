@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 
 const Agenda = () => {
@@ -8,6 +9,7 @@ const Agenda = () => {
       <div className="w-full h-full">
         <h1>Agenda Page</h1>
       </div>
+      <Footer />
     </div>
   );
 };

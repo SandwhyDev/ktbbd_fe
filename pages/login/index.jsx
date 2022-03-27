@@ -80,19 +80,21 @@ const index = () => {
               className="w-full outline-none bg-transparent  "
             />
           </div>
-          <Link href={"/home"} passHref>
-            <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2">
-              Login
-            </button>
-          </Link>
-          <p className="text-black text-xl text-center ">
-            <p>
-              Belum punya akun ?{" "}
-              <Link href={"/daftar"} passHref>
-                Daftar
-              </Link>
+          <div className="flex flex-col sm:flex sm:flex-row sm:gap-2 sm:items-center sm:justify-between ">
+            <Link href={"/home"} passHref>
+              <button className="w-full p-4 bg-blue-600 text-xl text-white rounded-lg font-light mt-3 mb-2 sm:w-[60%]">
+                Login
+              </button>
+            </Link>
+            <p className="text-black text-xl text-center ">
+              <p>
+                Belum punya akun ?{" "}
+                <Link href={"/daftar"} passHref>
+                  Daftar
+                </Link>
+              </p>
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </div>
