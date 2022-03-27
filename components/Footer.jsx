@@ -46,13 +46,13 @@ const Footer = () => {
       {isLogin.login && (
         <div className="flex items-center gap-10 text-2xl h-12 sm:gap-[100px] md:gap-[150px] lg:gap-[200px] xl:gap-[250px]">
           <Link passHref href={"/contact"}>
-            <span className="text-2xl cursor-pointer text-blue-300 ">
+            <span className="text-2xl cursor-pointer text-blue-300  ">
               <BsWhatsapp />
             </span>
           </Link>
 
           <Link href={"/profile"} passHref>
-            <span className="text-2xl text-blue-300 ">
+            <span className="text-2xl text-blue-300 cursor-pointer  ">
               <FaRegUser />
             </span>
           </Link>
@@ -60,14 +60,14 @@ const Footer = () => {
       )}
 
       {!isLogin.login && (
-        <div className="flex items-center gap-10 text-2xl h-12 sm:gap-[100px] md:gap-[150px] lg:gap-[200px] xl:gap-[250px]">
+        <div className="flex items-center gap-10 text-2xl h-12 sm:gap-[100px] md:gap-[150px] lg:gap-[200px] xl:gap-[250px] cursor-pointer ">
           <Link passHref href={"/contact"}>
             <span className="text-2xl cursor-pointer text-blue-300 ">
               <BsWhatsapp />
             </span>
           </Link>
           <Link href={"/login"} passHref>
-            <span className="text-2xl cursor-pointer text-blue-300 ">
+            <span className="text-2xl cursor-pointer text-blue-300 cursor-pointer  ">
               <FiLogIn />
             </span>
           </Link>
