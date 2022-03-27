@@ -7,9 +7,19 @@ import CardAcara from "../../components/CardAcara";
 import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
+import Head from "next/head";
+
 const Home = ({ data_acara, data_dokumentasi }) => {
   return (
     <div className="  w-screen min-h-screen  flex flex-col items-center sm:px-[50px] ">
+      <Head>
+        <title>KTBBD</title>
+        <meta
+          name="description"
+          content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
+        />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
+      </Head>
       <div className="w-full p-4 bg-white flex items-center justify-between lg:py-4 lg:px-0">
         <h1 className="text-xl font-bold text-blue-400 ">Halo, Users</h1>
         <div className="w-10 h-10 bg-blue-300">

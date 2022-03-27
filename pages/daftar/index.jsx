@@ -7,6 +7,7 @@ import { FiUser } from "react-icons/fi";
 import ax from "../../libs/ax";
 import { Modal } from "antd";
 import { BsArrowLeft } from "react-icons/bs";
+import Head from "next/head";
 
 const Daftar = () => {
   // const navigate = useRouter();
@@ -53,6 +54,14 @@ const Daftar = () => {
   // };
   return (
     <div className="w-screen h-screen bg-[#eaeaf3]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  ">
+      <Head>
+        <title>KTBBD DAFTAR</title>
+        <meta
+          name="description"
+          content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
+        />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
+      </Head>
       <div className="w-full  max-w-[700px]  flex flex-col gap-4  xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-4 rounded-lg  ">
         <div className="flex items-center w-full justify-between">
           <Link href="/home" passHref>

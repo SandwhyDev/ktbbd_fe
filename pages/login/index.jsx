@@ -6,6 +6,7 @@ import { MdLockOutline } from "react-icons/md";
 // import { Modal } from "antd";
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
+import Head from "next/head";
 
 const Login = () => {
   // const navigate = useRouter();
@@ -45,6 +46,11 @@ const Login = () => {
 
   return (
     <div className="w-screen h-screen bg-[#eaeaf3]  p-4 flex flex-col gap-4 justify-center items-center   xl:justify-center xl:items-center  xl:bg-[#332FD0] xl:text-white ">
+      <Head>
+        <title>KTBBD LOGIN</title>
+        <meta name="description" content="Login KTBBDApp" />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
+      </Head>
       <div className="w-full max-w-[700px] flex flex-col gap-4 xl:max-w-4xl xl:justify-center   xl:flex xl:flex-col xl:bg-white xl:shadow-md xl:p-8 xl:rounded-lg bg-white shadow-md p-8 rounded-lg xl:text-black  ">
         <div className="flex items-center w-full justify-between">
           <Link href="/home" passHref>

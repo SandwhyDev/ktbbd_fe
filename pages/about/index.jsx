@@ -3,9 +3,19 @@ import CardAnggota from "../../components/CardAnggota";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
+import Head from "next/head";
+
 const index = () => {
   return (
     <div className="w-screen h-screen flex flex-col ">
+      <Head>
+        <title>KTBBD</title>
+        <meta
+          name="description"
+          content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
+        />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
+      </Head>
       <Navbar title="Tentang KTBBD" />
       <div className="w-full flex flex-col gap-2 sm:px-20  ">
         {/* <Image

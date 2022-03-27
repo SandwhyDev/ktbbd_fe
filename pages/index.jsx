@@ -23,8 +23,11 @@ export default function Home() {
     <div className="home w-screen h-screen bg-[#2D31FA] flex flex-col items-center justify-center">
       <Head>
         <title>KTBBD</title>
-        <meta name="description" content="Aplikasi komplek bank bumi data" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
+        />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
       </Head>
       {/* <div className="left w-full h-[46%] bg-red-500"></div> */}
       <div className="fadeInUp w-screen p-4 z-10 flex  flex-col gap-4 justify-center items-center text-white lg:mt-20 ">

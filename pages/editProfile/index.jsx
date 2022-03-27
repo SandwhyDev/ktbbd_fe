@@ -9,6 +9,8 @@ import { Modal } from "antd";
 import { BsArrowLeft } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
 import Navbar from "../../components/Navbar";
+import Head from "next/head";
+
 const EditProfile = () => {
   const navigate = useRouter();
 
@@ -59,6 +61,14 @@ const EditProfile = () => {
   };
   return (
     <div className="w-screen h-screen flex flex-col  items-center">
+      <Head>
+        <title>KTBBD</title>
+        <meta
+          name="description"
+          content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
+        />
+        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
+      </Head>
       <Navbar title="Edit Profile" buttonBack="true" back="/profile" />
       <form
         className="w-full max-w-[700px] flex flex-col sm:mt-10 gap-4 p-4 "
