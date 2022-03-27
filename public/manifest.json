@@ -19,14 +19,14 @@
       "type": "image/svg+xml"
     },
     {
-      "src": "/icon-384x384.png",
+      "src": "/Logo_BBD-384x384.svg",
       "sizes": "384x384",
-      "type": "image/png"
+      "type": "image/svg+xml"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "/Logo_BBD-512x512.svg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/svg+xml"
     }
   ]
 }
