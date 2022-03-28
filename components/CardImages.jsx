@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiDownload } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
+import { decodeToken } from "react-jwt";
 
 const CardImages = ({
   image = "https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
@@ -10,6 +12,21 @@ const CardImages = ({
   const handleClick = () => {
     setClick(!click);
   };
+
+  const [isLogin, setIsLogin] = useState({
+    login: false,
+    userData: {},
+  });
+
+  useEffect(() => {
+    let token = sessionStorage.getItem("token");
+    if (token) {
+      setIsLogin({
+        login: true,
+        userData: decodeToken(token),
+      });
+    }
+  }, []);
   return (
     <div>
       <div
