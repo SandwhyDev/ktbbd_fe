@@ -13,13 +13,17 @@ const DetailAcara = ({ data }) => {
       <Head>
         <title>KTBBD</title>
         <meta
+          property="og:image"
+          content="https://res.cloudinary.com/sandwhy/image/upload/v1648451046/Logo_BBD_ls9zfc.png"
+        />
+        <meta
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
         />
         <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
       </Head>
       <Navbar back="/pengumanAcara" buttonBack="true" />
-      <div className="w-full flex  flex-col gap-2">
+      <div className="w-full flex  flex-col gap-2 ">
         <div>
           {/* <img
             src={data[0].banner.location}
@@ -34,18 +38,18 @@ const DetailAcara = ({ data }) => {
             className="object-cover"
           /> */}
           <img
-            src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="https://images.pexels.com/photos/9436715/pexels-photo-9436715.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
-            className="w-full h-44 object-cover"
+            className="w-full h-44 sm:h-[250px] xl:h-[350px] object-cover"
           />
         </div>
         {/* <h1 className="text-xl font-bold text-center "></h1> */}
-        <div className="w-full px-4 flex flex-col gap-2">
+        <div className="w-full px-4 flex flex-col gap-2 md:px-6">
           <div className="w-full">
             <h1 className="text-lg font-medium ">Konsep acara</h1>
             {/* <p className="font-light w-full">{data[0].konsep}</p>
              */}
-            <p>
+            <p className="sm:max-w-[450px] ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
               voluptatem sit doloribus repudiandae minima tempore ad explicabo,
               earum natus officia totam sint aut tempora illo, nemo voluptate,
