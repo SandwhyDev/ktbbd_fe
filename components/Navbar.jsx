@@ -13,7 +13,7 @@ const Navbar = ({ title = "title", back = "/home", buttonBack = false }) => {
     >
       {buttonBack && (
         <Link href={back} passHref>
-          <span className="text-xl">
+          <span className="text-xl cursor-pointer">
             <BsArrowLeft />
           </span>
         </Link>
