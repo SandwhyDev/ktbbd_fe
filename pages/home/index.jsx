@@ -15,6 +15,10 @@ const Home = ({ data_acara, data_dokumentasi }) => {
       <Head>
         <title>KTBBD</title>
         <meta
+          property="og:image"
+          content="https://res.cloudinary.com/sandwhy/image/upload/v1648451046/Logo_BBD_ls9zfc.png"
+        />
+        <meta
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
         />
