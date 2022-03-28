@@ -22,7 +22,6 @@ const Home = ({ data_acara, data_dokumentasi }) => {
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
         />
-        <link rel="icon" href="/Logo_BBD.svg" type="image/svg+xml" />
       </Head>
       <div className="w-full p-4 bg-white flex items-center justify-between lg:py-4 lg:px-0">
         <h1 className="text-xl font-bold text-blue-400 ">Halo, Users</h1>

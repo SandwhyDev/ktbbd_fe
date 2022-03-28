@@ -49,7 +49,7 @@ const CardImages = ({
 
       {click && (
         <div className="w-full h-full bg-black/70 flex flex-col gap-2 items-center justify-center touch-none fixed top-0 left-0  bottom-0 z-20  sm:w-full sm:p-10 sm:h-full ">
-          <div className=" max-w-max flex  gap-2 sm:w-full sm:h-full   sm:object-cover">
+          <div className=" max-w-max flex flex-col lg:flex lg:flex-row gap-2 sm:w-full sm:h-full   sm:object-cover">
             <img
               src={image}
               alt=""

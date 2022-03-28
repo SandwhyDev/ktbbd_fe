@@ -23,20 +23,13 @@ export default function Home() {
     <div className="home w-screen h-screen bg-[#2D31FA] flex flex-col items-center justify-center">
       <Head>
         <title>KTBBD</title>
-        {/* <meta
+        <meta
           property="og:image"
           content="https://res.cloudinary.com/sandwhy/image/upload/v1648451046/Logo_BBD_ls9zfc.png"
-        /> */}
+        />
         <meta
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
-        />
-
-        <link
-          rel="icon"
-          href="/Logo_BBD.svg"
-          type="image/svg+xml"
-          sizes="16x16"
         />
       </Head>
       {/* <div className="left w-full h-[46%] bg-red-500"></div> */}
