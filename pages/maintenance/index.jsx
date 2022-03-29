@@ -8,7 +8,7 @@ const Maintenance = () => {
       <div>
         <Image src={Gif} width={350} height={350} />
       </div>
-      <h1 className="xl:text-2xl text-xl text-blue-500 text-center font-bold">
+      <h1 className="xl:text-2xl text-xl text-blue-500 text-center font-bold capitalize">
         Mohon Maaf website <br /> sedang dalam perbaikan
       </h1>
     </div>
