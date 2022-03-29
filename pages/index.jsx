@@ -31,6 +31,11 @@ export default function Home() {
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
         />
+        <link
+          rel="shortcut icon"
+          href="https://res.cloudinary.com/sandwhy/image/upload/v1648451046/Logo_BBD_ls9zfc.png"
+          type="image/png"
+        />
       </Head>
       {/* <div className="left w-full h-[46%] bg-red-500"></div> */}
       <div className="fadeInUp w-screen p-4 z-10 flex  flex-col gap-4 justify-center items-center text-white lg:mt-20 ">

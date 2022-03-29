@@ -22,6 +22,11 @@ const Home = ({ data_acara, data_dokumentasi }) => {
           name="description"
           content="Aplikasi yang berupa aktifitas dan acara - acara warga komplek bank bumi daya"
         />
+        <link
+          rel="shortcut icon"
+          href="https://res.cloudinary.com/sandwhy/image/upload/v1648451046/Logo_BBD_ls9zfc.png"
+          type="image/png"
+        />
       </Head>
       <div className="w-full p-4 bg-white   flex items-center justify-between lg:py-4 lg:px-0">
         <h1 className="text-xl font-medium text-blue-400 ">Halo, Users</h1>
