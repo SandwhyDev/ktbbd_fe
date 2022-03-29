@@ -7,7 +7,7 @@ const Navbar = ({ title = "title", back = "/home", buttonBack = false }) => {
 
   return (
     <div
-      className={`w-full h-12 p-4  shadow-md flex items-center ${
+      className={`w-full h-12 p-4 border-b-[.5px] border-blue-300 flex items-center ${
         buttonBack ? "justify-between" : "justify-center"
       }   z-20`}
     >

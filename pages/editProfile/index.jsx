@@ -188,7 +188,7 @@ const EditProfile = () => {
             </div>
           </div>
         </div>
-        <button className="w-full p-4 border-blue-600 border-[.8px] text-xl text-blue-500 rounded-lg font-bold mt-3">
+        <button className="w-full p-4 border-blue-600 border-[.8px] text-xl text-blue-500 rounded-lg font-bold mt-3 hover:bg-blue-500 hover:text-white hover:duration-500 hover:border-white">
           Edit Profile
         </button>
       </form>
