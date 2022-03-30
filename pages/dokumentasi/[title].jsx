@@ -29,7 +29,7 @@ const DetailAcara = () => {
           <CardImages image="https://images.pexels.com/photos/3867035/pexels-photo-3867035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/5637599/pexels-photo-5637599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/5637524/pexels-photo-5637524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <CardImages image="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <CardImages image="https://images.pexels.com/photos/2199486/pexels-photo-2199486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/2774292/pexels-photo-2774292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/3050325/pexels-photo-3050325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/1737405/pexels-photo-1737405.jpeg" />
@@ -40,9 +40,9 @@ const DetailAcara = () => {
           <CardImages image="https://images.pexels.com/photos/4110472/pexels-photo-4110472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
           <CardImages image="https://images.pexels.com/photos/3867035/pexels-photo-3867035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           <CardImages image="https://images.pexels.com/photos/5637599/pexels-photo-5637599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <CardImages image="https://images.pexels.com/photos/5637524/pexels-photo-5637524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <CardImages image="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-          <CardImages image="https://images.pexels.com/photos/2774292/pexels-photo-2774292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <CardImages image="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+          <CardImages image="https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
+          <CardImages image="https://images.pexels.com/photos/3182829/pexels-photo-3182829.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
         </div>
       </div>
       <div className="mt-12">
