@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../../components/Footer";
 import SwiperBanners from "../../components/SwiperBanners";
 import { BsArrowRight } from "react-icons/bs";
@@ -8,10 +8,25 @@ import CardDokumentasi from "../../components/CardDokumentasi";
 import Link from "next/link";
 import ax from "../../libs/ax";
 import Head from "next/head";
+import { decodeToken } from "react-jwt";
 
-const Home = ({ data_acara, data_dokumentasi }) => {
+const HomePage = ({ data_acara, data_dokumentasi }) => {
+  const [isLogin, setIsLogin] = useState({
+    login: false,
+    userData: {},
+  });
+
+  useEffect(() => {
+    let token = sessionStorage.getItem("token");
+    if (token) {
+      setIsLogin({
+        login: true,
+        userData: decodeToken(token),
+      });
+    }
+  }, []);
   return (
-    <div className="  w-screen min-h-screen  flex flex-col items-center sm:px-[50px] ">
+    <div className="  w-full min-h-full   flex flex-col items-center sm:px-[50px] ">
       <Head>
         <title>KTBBD</title>
         <meta
@@ -28,8 +43,12 @@ const Home = ({ data_acara, data_dokumentasi }) => {
           type="image/png"
         />
       </Head>
-      <div className="w-full p-4 bg-white   flex items-center justify-between lg:py-4 lg:px-0">
-        <h1 className="text-xl font-medium text-blue-400 ">Halo, Users</h1>
+      <div className="w-full p-4 bg-white   flex items-center justify-between sm:py-4 sm:px-0">
+        {isLogin.login ? (
+          <h1 className="text-xl font-medium text-blue-400 ">Halo, Users</h1>
+        ) : (
+          <h1 className="text-xl font-medium text-blue-400 ">KTBBD</h1>
+        )}
         <div className="w-10 h-10 bg-blue-300">
           <Image src={"/Logo.png"} alt="Logo" width={40} height={40} />
         </div>
@@ -121,4 +140,4 @@ const Home = ({ data_acara, data_dokumentasi }) => {
 //   };
 // }
 
-export default Home;
+export default HomePage;
