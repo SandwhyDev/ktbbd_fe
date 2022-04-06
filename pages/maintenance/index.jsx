@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import Gif from "../../assets/flame-remote-working.gif";
+import Gif from "../../assets/22991-isometric-people-working-with-technology.gif";
 const Maintenance = () => {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center bg-white p-14">
+    <div className="w-screen h-screen flex flex-col justify-center items-center bg-white p-14 ">
       <div>
         <Image src={Gif} width={350} height={350} />
       </div>

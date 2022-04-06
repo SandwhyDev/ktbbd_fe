@@ -19,7 +19,7 @@ const DokumentasiAcara = ({ data }) => {
       </Head>
       <Navbar title="Dokumentasi Acara" buttonBack="true" />
       <div className="flex flex-col gap-2 w-full p-4 ">
-        <div className=" lg:w-full lg:flex lg:flex-row flex flex-col gap-2  ">
+        <div className=" lg:w-full lg:flex lg:flex-row flex flex-col gap-2  xl:flex xl:flex-wrap xl:items-center xl:pl-24  ">
           <CardDokumentasi />
           <CardDokumentasi />
           <CardDokumentasi />
